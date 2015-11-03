@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCarViewController">
+            <connections>
+                <outlet property="carNumber" destination="VkP-Ve-96l" id="NAR-95-3kd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZAi-WX-QW9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLW-uQ-t3Y">
+                    <rect key="frame" x="8" y="199" width="304" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="L6G-Ma-Sle"/>
+                        <constraint firstAttribute="width" constant="304" id="ZBW-eQ-Ngo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="确定" backgroundImage="登录注册按钮.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蓝色车牌" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oY-U5-oeu">
+                    <rect key="frame" x="8" y="112" width="304" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="FcS-Sz-CDB"/>
+                        <constraint firstAttribute="height" constant="30" id="ZyW-Uc-m7U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入车牌号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VkP-Ve-96l">
+                    <rect key="frame" x="82" y="150" width="230" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="A2w-ah-D6D"/>
+                        <constraint firstAttribute="width" constant="230" id="gcc-Sb-Fmi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KLW-uQ-t3Y" secondAttribute="trailing" constant="8" id="0nH-LI-xKh"/>
+                <constraint firstItem="VkP-Ve-96l" firstAttribute="top" secondItem="5oY-U5-oeu" secondAttribute="bottom" constant="8" id="8Sp-Bz-w9N"/>
+                <constraint firstItem="5oY-U5-oeu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="112" id="DdZ-xB-bHa"/>
+                <constraint firstAttribute="bottom" secondItem="ZAi-WX-QW9" secondAttribute="bottom" id="G5t-Gw-5sy"/>
+                <constraint firstItem="5oY-U5-oeu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="H4A-7I-YKf"/>
+                <constraint firstAttribute="trailing" secondItem="ZAi-WX-QW9" secondAttribute="trailing" id="NzN-oB-tm0"/>
+                <constraint firstItem="VkP-Ve-96l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="VLi-bn-GI3"/>
+                <constraint firstAttribute="trailing" secondItem="VkP-Ve-96l" secondAttribute="trailing" constant="8" id="dyn-A8-2Et"/>
+                <constraint firstItem="ZAi-WX-QW9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fBK-nZ-Xj3"/>
+                <constraint firstItem="VkP-Ve-96l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="82" id="fes-pE-jfU"/>
+                <constraint firstItem="ZAi-WX-QW9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gdP-0S-sni"/>
+                <constraint firstAttribute="trailing" secondItem="5oY-U5-oeu" secondAttribute="trailing" constant="8" id="kVI-tN-LL6"/>
+                <constraint firstItem="KLW-uQ-t3Y" firstAttribute="top" secondItem="VkP-Ve-96l" secondAttribute="bottom" constant="19" id="nm1-tX-Cih"/>
+                <constraint firstItem="KLW-uQ-t3Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="vx1-l1-E0i"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-103" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg.png" width="434" height="764"/>
+        <image name="登录注册按钮.png" width="1053" height="153"/>
+    </resources>
+</document>
